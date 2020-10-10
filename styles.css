@@ -1,0 +1,28 @@
+body{
+    padding: 5%;
+    text-align: center;
+}
+h1{
+    margin-bottom: 25px;
+}
+
+.table{
+    visibility: hidden;
+}
+.clear{
+    margin: 2%;
+    visibility: hidden;
+    
+}
+.spin{
+    margin-top: 5%;
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+button{
+    margin : 15px;
+}
+
+

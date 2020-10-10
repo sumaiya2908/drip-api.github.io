@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="header">
+        <h1>DRIP Calculator</h1>
+   </div>
+   <div class="form form-group">
+    <form>
+        <label for="amount">Enter the Starting price</label>
+        <input id="amount" value="" type="number"><br>
+        <label for="symbol">Enter the Security symbol</label>
+        <input id="symbol" value="" type="text"><br>
+        <label for="year">Enter the year</label>
+        <input id="year" type="number" value=""><br>
+        <label for="reinvest">Reinvestment</label>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="rein" value="true" checked="checked">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="rein" value="false"><br>
+        <label for="tax_p">Tax percentage</label>
+        <input id="tax_p" type="number"><br>
+        <label for="emp_con">Employee Contribution</label>
+        <input id="emp_con" type="number" value=""><br>
+        <button class="btn sub btn-primary" type="submit">Find</button>
+
+    </form>
+</div>
+<div class="spin spinner-border"></div>
+   <div>
+       <table class="table">
+           <tr>
+               <th>Year</th>
+               <th>Start Balance</th>
+               <th>Share Price</th>
+               <th>Number of Shares</th>
+               <th>Growth</th>
+               <th>Dividend</th>
+               <th>Reinvestment</th>
+               <th>End Balance</th>
+           </tr>
+       </table>
+   </div>
+   <div class="reset">
+       <button class="clear btn btn-primary">Find more</button>
+</div>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
