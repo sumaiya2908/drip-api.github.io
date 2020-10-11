@@ -25,13 +25,3 @@ button{
     margin : 15px;
 }
 
-
-
-
-
-@media screen and (min-width: 786px) {
-    form {
-        width: 50vw;
-        text-align: center;
-    }
-}
