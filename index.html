@@ -16,15 +16,15 @@
         <form class="p-5">
             <div class="form-group">
                 <label for="amount">Start Price</label>
-                <input class="form-control" id="amount" value="" type="number"><br>
+                <input required class="form-control" id="amount" value="" type="number"><br>
             </div>
 
             <div class="form-group">
                 <label for="symbol">Security Symbol of the stock</label>
-                <input class="form-control" id="symbol" value="" type="text"><br>
+                <input required class="form-control" id="symbol" value="" type="text"><br>
             </div>
             <label for="year">Number of years</label>
-            <input class="form-control" id="year" type="number" value=""><br>
+            <input required class="form-control" id="year" type="number" value=""><br>
             <label for="reinvest">Reinvested: </label>
             <div class="p-2">
                 <label for="yes">Yes</label>
@@ -32,9 +32,9 @@
                 <label for="no">No</label>
                 <input type="radio" id="no" name="rein" value="false"><br>
             </div>
-            <label for="tax_p">Tax percentage</label>
+            <label for="tax_p">Tax percentage (if any)</label>
             <input class="form-control" id="tax_p" type="number"><br>
-            <label for="emp_con">Employee Contribution</label>
+            <label for="emp_con">Employee Contribution (per month, if any)</label>
             <input class="form-control" id="emp_con" type="number" value=""><br>
             <button class="btn sub btn-primary" type="submit">Find</button>
         </form>
@@ -55,7 +55,7 @@
            </table>
        </div>
        <div class="reset">
-           <button class="clear btn btn-primary">Find more</button>
+           <button class="clear btn btn-secondary">Find more</button>
     </div>    
     </div>
    

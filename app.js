@@ -12,7 +12,19 @@ $(".clear").click(function(){
 
 
 function fetchAPI(amt,sym,year,rein,tax,emp_c)  {
-let url =`https://9ldears527.execute-api.us-west-1.amazonaws.com/dev?start_balance=${amt}&symbol=${sym}&n_years=${year}&reinvested=${rein}&tax_percent=${tax}&emp_contrib=${emp_c}`;
+    if (!(tax == "")) {
+        tax = "&tax_percent=" + tax;
+    } 
+
+    if (!(emp_c == "")) {
+        emp_c = "&emp_contrib=" + emp_c;
+    } 
+
+let url =`https://9ldears527.execute-api.us-west-1.amazonaws.com/dev?start_balance=${amt}&symbol=${sym}&n_years=${year}&reinvested=${rein}${tax}${emp_c}`;
+console.log(url)
+console.log(rein)
+console.log(tax)
+console.log(emp_c)
 fetch(url)
    .then((res) =>  res.json())
    .then((data) => { 
